@@ -27,10 +27,10 @@ db-1       | selecting default time zone ... UTC
 db-1       | creating configuration files ... ok
 db-1       | running bootstrap script ... ok
 db-1       | sh: locale: not found
-db-1       | 2024-02-10 08:13:26.563 UTC [30] WARNING:  no usable system locales were found
-db-1       | performing post-bootstrap initialization ... ok
-haproxy-1  | [NOTICE]   (1) : New worker (7) forked
+db-1       | 2024-02-16 12:26:19.041 UTC [30] WARNING:  no usable system locales were found
+haproxy-1  | [NOTICE]   (1) : New worker (9) forked
 haproxy-1  | [NOTICE]   (1) : Loading success.
+db-1       | performing post-bootstrap initialization ... ok
 db-1       | initdb: warning: enabling "trust" authentication for local connections
 db-1       | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
 db-1       | syncing data to disk ... ok
@@ -62,13 +62,14 @@ db-1       | PostgreSQL init process complete; ready for start up.
 db-1       | 
 haproxy-1  | [NOTICE]   (1) : haproxy version is 2.9.4-4e071ad
 haproxy-1  | [WARNING]  (1) : Exiting Master process...
-haproxy-1  | [WARNING]  (7) : Proxy myfrontend stopped (cumulated conns: FE: 61385, BE: 0).
-haproxy-1  | [WARNING]  (7) : Proxy apis stopped (cumulated conns: FE: 0, BE: 61394).
-haproxy-1  | [WARNING]  (1) : Current worker (7) exited with code 0 (Exit)
+haproxy-1  | [WARNING]  (9) : Proxy myfrontend stopped (cumulated conns: FE: 61440, BE: 0).
+haproxy-1  | [WARNING]  (9) : Proxy apis stopped (cumulated conns: FE: 0, BE: 61480).
+haproxy-1  | [WARNING]  (1) : Current worker (9) exited with code 0 (Exit)
 haproxy-1  | [WARNING]  (1) : All workers exited. Exiting... (0)
 haproxy-1 exited with code 0
 haproxy-1 exited with code 0
 api01-1 exited with code 0
+api01-1 exited with code 2
 api02-1 exited with code 0
 api02-1 exited with code 2
 db-1 exited with code 0
